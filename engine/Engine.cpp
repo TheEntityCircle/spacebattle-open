@@ -244,4 +244,5 @@ ShotResult Engine::makeShot(Point shot)
             }
         }
     }
+    return MISS;
 }

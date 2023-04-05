@@ -9,9 +9,7 @@ find_package(Curses REQUIRED)
 include_directories(${CURSES_INCLUDE_DIR})
 
 add_executable(Profiler Profiler.cpp
-                        ../engine/Engine.h ../engine/Engine.cpp
-                        ../engine/TypesAndConsts.h
-                        ../invalidbot/InvalidBot.h)
+                        ../engine/Engine.cpp)
 
 target_link_libraries(Profiler ${CURSES_LIBRARIES})
 
